@@ -1,0 +1,44 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://icon.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/mc.gd" type="Script" id=2]
+[ext_resource path="res://Scripts/Camera2D.gd" type="Script" id=3]
+
+[node name="Root" type="Node"]
+
+[node name="icon" type="Sprite" parent="." index="0"]
+
+position = Vector2( 567, 279 )
+texture = ExtResource( 1 )
+script = ExtResource( 2 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="Camera2D" type="Camera2D" parent="icon" index="0"]
+
+position = Vector2( -1.50732, -3.05176e-005 )
+anchor_mode = 1
+rotating = false
+current = true
+zoom = Vector2( 1, 1 )
+limit_left = 0
+limit_top = 0
+limit_right = 10000000
+limit_bottom = 10000000
+limit_smoothed = false
+drag_margin_h_enabled = false
+drag_margin_v_enabled = false
+smoothing_enabled = false
+smoothing_speed = 5.0
+offset_v = 0.0
+offset_h = 0.0
+drag_margin_left = 0.1
+drag_margin_top = 0.1
+drag_margin_right = 0.1
+drag_margin_bottom = 0.1
+editor_draw_screen = true
+editor_draw_limits = false
+editor_draw_drag_margin = false
+script = ExtResource( 3 )
+_sections_unfolded = [ "Drag Margin", "Limit", "Offset", "Visibility" ]
+
+
